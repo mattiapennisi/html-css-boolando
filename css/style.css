@@ -1,0 +1,57 @@
+:root {
+    --header-bg: #ff6900;
+}
+
+body {
+    color: black;
+}
+
+.debug {
+    * {
+        border: 1px dashed black;
+    }
+    
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#header {
+    background-color: var(--header-bg);
+    min-height: 50px;
+    box-shadow: 1px 1px 2px grey;
+    color: #fff;
+    position: fixed;
+    justify-content: space-between;
+
+    #logo-img {
+        height: 25px;
+    }
+}
+
+/* Utility classes */
+
+.w-100 {
+    width: 100%;
+}
+
+.hor-pad {
+    padding: 0 10%;
+}
+
+.f-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.f-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-ja-center {
+    justify-content: center;
+    align-items: center;
+}
