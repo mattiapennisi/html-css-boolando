@@ -25,6 +25,7 @@ a {
     color: #fff;
     position: fixed;
     justify-content: space-between;
+    z-index: -1;
 
     #logo-img {
         height: 25px;
