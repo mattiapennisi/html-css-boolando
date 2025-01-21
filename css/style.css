@@ -53,6 +53,72 @@ main {
     }
 }
 
+#card1 {
+    background-image: url(../img/1.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+
+    &:hover {
+        background-image: url(../img/1b.webp);
+    }
+}
+
+#card2 {
+    background-image: url(../img/2.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+
+    &:hover {
+        background-image: url(../img/2b.webp);
+    }
+}
+
+#card3 {
+    background-image: url(../img/3.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+
+    &:hover {
+        background-image: url(../img/3b.webp);
+    }
+}
+
+#card4 {
+    background-image: url(../img/4.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+
+    &:hover {
+        background-image: url(../img/4b.webp);
+    }
+}
+
+#card5 {
+    background-image: url(../img/5.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+
+    &:hover {
+        background-image: url(../img/5b.webp);
+    }
+}
+
+#card6 {
+    background-image: url(../img/6.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+
+    &:hover {
+        background-image: url(../img/6b.webp);
+    }
+}
+
 #footer {
     color: #fff;
     background-color: var(--footer-bg);
