@@ -45,10 +45,10 @@ main {
     #main-cont {
         flex-wrap: wrap;
         gap: 10px;
-        padding: 50px 0;
+        padding: 50px 10%;
 
         .card {
-            width: 30%;
+            width: 32%;
         }
     }
 }
