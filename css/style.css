@@ -46,6 +46,7 @@ main {
         flex-wrap: wrap;
         gap: 10px;
         padding: 50px 10%;
+        justify-content: space-between;
 
         .card {
             width: 32%;
@@ -55,9 +56,9 @@ main {
 
 #card1 {
     background-image: url(../img/1.webp);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 200px;
+    min-height: 400px;
 
     &:hover {
         background-image: url(../img/1b.webp);
@@ -66,9 +67,9 @@ main {
 
 #card2 {
     background-image: url(../img/2.webp);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 200px;
+    min-height: 400px;
 
     &:hover {
         background-image: url(../img/2b.webp);
@@ -77,9 +78,9 @@ main {
 
 #card3 {
     background-image: url(../img/3.webp);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 200px;
+    min-height: 400px;
 
     &:hover {
         background-image: url(../img/3b.webp);
@@ -88,9 +89,9 @@ main {
 
 #card4 {
     background-image: url(../img/4.webp);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 200px;
+    min-height: 400px;
 
     &:hover {
         background-image: url(../img/4b.webp);
@@ -99,9 +100,9 @@ main {
 
 #card5 {
     background-image: url(../img/5.webp);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 200px;
+    min-height: 400px;
 
     &:hover {
         background-image: url(../img/5b.webp);
@@ -110,9 +111,9 @@ main {
 
 #card6 {
     background-image: url(../img/6.webp);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 200px;
+    min-height: 400px;
 
     &:hover {
         background-image: url(../img/6b.webp);
