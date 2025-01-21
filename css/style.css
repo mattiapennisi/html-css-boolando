@@ -27,7 +27,7 @@ a {
     color: #fff;
     position: fixed;
     top: 0px;
-    z-index: 1;
+    z-index: 10;
 
     #h-cont {
         justify-content: space-between;
@@ -44,79 +44,43 @@ main {
 
     #main-cont {
         flex-wrap: wrap;
-        gap: 10px;
         padding: 50px 10%;
-        justify-content: space-between;
-
-        .card {
-            width: 32%;
-        }
     }
 }
 
-#card1 {
-    background-image: url(../img/1.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 400px;
+.card {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+    position: relative;
+}
+
+.img-card {
+    z-index: 1;
 
     &:hover {
-        background-image: url(../img/1b.webp);
+        display: none;
     }
 }
 
-#card2 {
-    background-image: url(../img/2.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 400px;
-
-    &:hover {
-        background-image: url(../img/2b.webp);
-    }
+.img-card2 {
+    position: absolute;
 }
 
-#card3 {
-    background-image: url(../img/3.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 400px;
+.like {
+    background-color: #fff;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    z-index: 3;
+    width: 20px;
+    aspect-ratio: 1;
 
     &:hover {
-        background-image: url(../img/3b.webp);
-    }
-}
-
-#card4 {
-    background-image: url(../img/4.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 400px;
-
-    &:hover {
-        background-image: url(../img/4b.webp);
-    }
-}
-
-#card5 {
-    background-image: url(../img/5.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 400px;
-
-    &:hover {
-        background-image: url(../img/5b.webp);
-    }
-}
-
-#card6 {
-    background-image: url(../img/6.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 400px;
-
-    &:hover {
-        background-image: url(../img/6b.webp);
+        color: red;
     }
 }
 
@@ -178,4 +142,33 @@ main {
 
 .semibold {
     font-weight: 500;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.tags {
+    position: absolute;
+    z-index: 3;
+    bottom:-70px;
+    left: 0;   
+}
+
+.save {
+    z-index: 3;
+    bottom:-70px;
+    left: 0;
+    background-color: red;
+    color: #fff;
+    padding: 2px 5px;
+}
+
+.stnty {
+    background-color: green;
+    color: #fff;
+    padding: 2px 5px;
+    z-index: 3;
+    bottom:-70px;
+    left: 0;
 }
