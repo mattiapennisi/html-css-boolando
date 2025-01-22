@@ -38,36 +38,45 @@ a {
     }
 }
 
-main {
+#main {
     margin-top: 50px;
-    min-height: 500px;
+    position: relative;
+    height: 100%;
 
     #main-cont {
+        padding: 50px 0;
+        margin: 0 10%;
         flex-wrap: wrap;
-        padding: 50px 10%;
+        gap: 10px;
+        position: relative;
     }
 }
 
 .card {
-    width: 200px;
-    height: 200px;
+    width: 33%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #1a1a1a;
     position: relative;
-}
-
-.img-card {
-    z-index: 1;
+    width: 30%;
 
     &:hover {
-        display: none;
+        .img-card {
+            z-index:-1;
+        }
     }
 }
 
-.img-card2 {
+.img-card {
+    width: 100%;
     position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.img-card2 {
+    width: 100%;
+    position: relative;
 }
 
 .like {
@@ -75,13 +84,53 @@ main {
     position: absolute;
     top: 5px;
     right: 0;
-    z-index: 3;
+    z-index: 5;
     width: 20px;
     aspect-ratio: 1;
 
     &:hover {
         color: red;
     }
+}
+
+.tags {
+    position: absolute;
+    z-index: 3;
+    bottom:90px;
+    left: 0;   
+}
+
+.save {
+    z-index: 3;
+    background-color: red;
+    color: #fff;
+    padding: 2px 5px;
+    margin: 0 2px 0 0;
+}
+
+.stnty {
+    background-color: green;
+    color: #fff;
+    padding: 2px 5px;
+    z-index: 3;
+    margin: 0px 2px 0px 0px;
+}
+
+.card-brand {
+    font-style: italic;
+}
+
+.card-article {
+    font-weight: 700;
+}
+
+.card-price {
+    color: red;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: var(--footer-bg);
 }
 
 #footer {
@@ -144,31 +193,6 @@ main {
     font-weight: 500;
 }
 
-.old-price {
-    text-decoration: line-through;
-}
-
-.tags {
-    position: absolute;
-    z-index: 3;
-    bottom:-70px;
-    left: 0;   
-}
-
-.save {
-    z-index: 3;
-    bottom:-70px;
-    left: 0;
-    background-color: red;
-    color: #fff;
-    padding: 2px 5px;
-}
-
-.stnty {
-    background-color: green;
-    color: #fff;
-    padding: 2px 5px;
-    z-index: 3;
-    bottom:-70px;
-    left: 0;
+.w10pc {
+    width: 10%;
 }
