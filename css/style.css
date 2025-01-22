@@ -44,20 +44,21 @@ a {
     height: 100%;
 
     #main-cont {
-        padding: 50px 0;
-        margin: 0 10%;
+        padding: 50px 0 0 0;
+        margin: 0 15%;
         flex-wrap: wrap;
         gap: 10px;
         position: relative;
+        justify-content: space-between;
     }
 }
 
 .card {
-    width: 33%;
+    width: 32%;
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 30%;
+    margin-bottom: 50px;
 
     &:hover {
         .img-card {
@@ -85,7 +86,7 @@ a {
     top: 5px;
     right: 0;
     z-index: 5;
-    width: 20px;
+    width: 30px;
     aspect-ratio: 1;
 
     &:hover {
@@ -97,35 +98,40 @@ a {
     position: absolute;
     z-index: 3;
     bottom:90px;
-    left: 0;   
+    left: 0;
+    font-size: 0.7rem; 
+    font-weight: 700;  
 }
 
 .save {
     z-index: 3;
     background-color: red;
     color: #fff;
-    padding: 2px 5px;
+    padding: 5px;
     margin: 0 2px 0 0;
 }
 
 .stnty {
     background-color: green;
     color: #fff;
-    padding: 2px 5px;
+    padding: 5px;
     z-index: 3;
     margin: 0px 2px 0px 0px;
 }
 
 .card-brand {
-    font-style: italic;
+    width: 100%;
 }
 
 .card-article {
     font-weight: 700;
+    width: 100%;
 }
 
 .card-price {
     color: red;
+    width: 100%;
+    font-weight: 500;
 }
 
 .old-price {
@@ -162,7 +168,7 @@ a {
 }
 
 .hor-m-sect {
-    padding: 0 10%;
+    padding: 0 15%;
 }
 
 .f-row {
