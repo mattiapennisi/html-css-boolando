@@ -92,8 +92,10 @@ a {
     aspect-ratio: 1;
 
     &:hover {
-        color: red;
-        transform: scale(1.2);
+        .heart {
+            color: red;
+            transform: scale(1.2);
+        }
     }
 }
 
