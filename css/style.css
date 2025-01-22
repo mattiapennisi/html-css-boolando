@@ -34,6 +34,8 @@ a {
 
         #logo-img {
             height: 25px;
+            position: absolute;
+            left: 46%;
         }
     }
 }
@@ -62,7 +64,7 @@ a {
 
     &:hover {
         .img-card {
-            z-index:-1;
+            display: none;
         }
     }
 }
@@ -91,6 +93,7 @@ a {
 
     &:hover {
         color: red;
+        transform: scale(1.2);
     }
 }
 
